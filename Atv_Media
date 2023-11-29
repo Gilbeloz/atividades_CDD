@@ -1,0 +1,28 @@
+package Pacote_CDD;
+
+import java.util.Scanner;
+
+public class Atv_Media {
+
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Digite a primeira nota: ");
+            double nota1 = scanner.nextDouble();
+
+            System.out.print("Digite a segunda nota: ");
+            double nota2 = scanner.nextDouble();
+
+            double media = (nota1 + nota2) / 2;
+
+            if (media >= 7 && media <= 10) {
+                System.out.println("Sua média é igual a: " + media);
+                System.out.println("Aprovado!");
+            } else if (media < 7 && media >= 4) {
+                System.out.println("Sua média é igual a: " + media);
+                System.out.println("Recuperação!");
+            } else if (media < 4 && media >= 0) {
+                System.out.println("Sua média é igual a: " + media);
+                System.out.println("Reprovado!");
+            } else {
+                System.out.println("Digite uma nota válida para o cálculo da média!");
+}}}}
